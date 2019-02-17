@@ -19,4 +19,4 @@ samples, guidance on mobile development, and a full API reference.
 Flutter 1.0.0 stable version
 
 ## Screenshot
-![Finished App](https://github.com/ikhsanalatsary/dicee-flut/blob/master/Screenshot.png)
+<img src="https://github.com/ikhsanalatsary/dicee-flut/blob/master/Screeshot.png" width="267" alt="Finished App" title="Demo Dicee Flutter">
