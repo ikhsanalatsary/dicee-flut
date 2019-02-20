@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
                 child: Padding(
                   padding: EdgeInsets.only(top: 50.0),
                   child: Image(
-                    image:AssetImage('assets/diceeLogo.png'),
+                    image: AssetImage('assets/diceeLogo.png'),
                   ),
                 ),
               ),
@@ -48,8 +48,8 @@ class RollDiceeState extends State<RollDicee> {
     return (Random().nextInt(6) + 1).toString();
   }
 
-  void rollingDicee(){
-    setState((){
+  void rollingDicee() {
+    setState(() {
       randomImage1 = getRandom();
       randomImage2 = getRandom();
     });
@@ -63,16 +63,24 @@ class RollDiceeState extends State<RollDicee> {
         child: Column(
           children: <Widget>[
             Container(
+              // color: Colors.yellow,
+              margin: EdgeInsets.only(
+                  left: isIPhone ? 70.0 : 60.0,
+                  right: isIPhone ? 70.0 : 60.0,
+                  top: isIPhone ? 80.0 : 40.0,
+                  bottom: 20.0),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Padding(
-                    padding: EdgeInsets.only(top: 60.0, left: isIPhone ? 65.0 : 60.0, right: 10.0),
+                    padding: EdgeInsets.only(right: 10.0),
                     child: Image(
                       image: AssetImage('assets/dice' + randomImage1 + '.png'),
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top: 60.0, left: isIPhone ? 65.0 : 60.0, right: 25.0),
+                    padding: EdgeInsets.only(left: 10.0),
                     child: Image(
                       image: AssetImage('assets/dice' + randomImage2 + '.png'),
                     ),
