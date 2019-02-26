@@ -20,3 +20,6 @@ Flutter 1.0.0 stable version
 
 ## Screenshot
 <img src="https://github.com/ikhsanalatsary/dicee-flut/blob/master/Screeshot.png" width="267" alt="Finished App" title="Demo Dicee Flutter">
+
+## Vanilla JS version
+[Dice](https://github.com/ikhsanalatsary/dice)
